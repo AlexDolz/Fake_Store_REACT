@@ -1,0 +1,11 @@
+.homepage__section {
+  height: 72.2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: seashell;
+}
+
+.homepage__section h1 {
+  font-size: 40px;
+}

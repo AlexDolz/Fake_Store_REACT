@@ -1,0 +1,25 @@
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+  background: cornflowerblue;
+}
+
+.menu__container {
+  display: flex;
+  gap: 110px;
+}
+
+.menu__container a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+@media (max-width: 435px) {
+  .menu__container {
+    gap: 50px;
+  }
+}

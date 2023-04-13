@@ -1,0 +1,14 @@
+.products__section {
+  background: seashell;
+  display: flex;
+  justify-content: flex-start;
+  gap: 35px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.products__section__title h1 {
+  text-align: center;
+  padding: 50px 0;
+  background: seashell;
+}

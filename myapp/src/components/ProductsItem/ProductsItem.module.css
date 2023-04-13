@@ -1,0 +1,23 @@
+.products__item {
+  border: 3px solid cornflowerblue;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  cursor: pointer;
+  height: 300px;
+  box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+    25px 0 20px -20px rgba(0, 0, 0, 0.45);
+  background: cornflowerblue;
+}
+
+.product__title {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

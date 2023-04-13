@@ -1,0 +1,4 @@
+.star:not(:first-child) {
+  margin-left: 5px;
+  font-size: 18px;
+}

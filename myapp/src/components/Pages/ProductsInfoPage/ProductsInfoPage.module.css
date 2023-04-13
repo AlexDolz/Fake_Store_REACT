@@ -1,0 +1,30 @@
+.products__info__title {
+  text-align: center;
+  background: seashell;
+}
+.products__info__page {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+  padding: 50px 200px;
+  flex-direction: column;
+  background: seashell;
+}
+
+.products__info__page img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+@media (max-width: 726px) {
+  .products__info__page {
+    padding: 50px 100px;
+  }
+}
+@media (max-width: 435px) {
+  .products__info__page {
+    padding: 50px 50px;
+  }
+}
