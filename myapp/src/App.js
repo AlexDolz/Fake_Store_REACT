@@ -1,9 +1,8 @@
 import React from 'react';
 import './App.css';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-
-import { HashRouter, Route, Switch } from 'react-router-dom';
 
 import HomePage from './components/Pages/HomePage/HomePage';
 import ProductsPage from './components/Pages/ProductsPage/ProductsPage';
