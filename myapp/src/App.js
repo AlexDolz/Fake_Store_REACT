@@ -16,10 +16,10 @@ const App = () => {
       <HashRouter basename={process.env.PUBLIC_URL}>
         <Header />
         <Switch>
-          <Route exact path='/' component={<HomePage />} />
-          <Route path='/products' component={<ProductsPage />} />
-          <Route path='/products/:id' component={<ProductsInfoPage />} />
-          <Route path='*' component={<NotFoundPage />} />
+          <Route exact path='/' component={HomePage} />
+          <Route path='/products' component={ProductsPage} />
+          <Route path='/products/:id' component={ProductsInfoPage} />
+          <Route path='*' component={NotFoundPage} />
         </Switch>
       </HashRouter>
 
