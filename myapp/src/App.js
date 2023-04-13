@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './components/Pages/HomePage/HomePage';
 import ProductsPage from './components/Pages/ProductsPage/ProductsPage';
 import ProductsInfoPage from './components/Pages/ProductsInfoPage/ProductsInfoPage';
@@ -12,7 +12,7 @@ import NotFoundPage from './components/Pages/NotFoundPage/NotFoundPage';
 const App = () => {
   return (
     <div>
-      <Router>
+      <Router basename='/'>
         <Header />
         <Routes>
           <Route path='/' element={<HomePage />} />
