@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
@@ -14,12 +14,12 @@ const App = () => {
     <div>
       <HashRouter basename={process.env.PUBLIC_URL}>
         <Header />
-        <Switch>
-          <Route exact path='/' component={HomePage} />
-          <Route path='/products' component={ProductsPage} />
-          <Route path='/products/:id' component={ProductsInfoPage} />
-          <Route path='*' component={NotFoundPage} />
-        </Switch>
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/products' element={<ProductsPage />} />
+          <Route path='/products/:id' element={<ProductsInfoPage />} />
+          <Route path='*' element={<NotFoundPage />} />
+        </Routes>
       </HashRouter>
 
       <Footer />
