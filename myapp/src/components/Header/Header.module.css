@@ -16,6 +16,19 @@
   text-decoration: none;
   font-size: 30px;
   font-weight: bold;
+  transition: all 0.3s ease-out;
+}
+
+.menu__container a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: coral;
+  transition: width 0.3s;
+}
+.menu__container a:hover::after {
+  width: 100%;
 }
 
 @media (max-width: 435px) {
