@@ -15,7 +15,7 @@ const App = () => {
       <Router basename='/'>
         <Header />
         <Routes>
-          <Route path='/' element={<HomePage />} />
+          <Route path='/Fake_Store_REACT' element={<HomePage />} />
           <Route path='/products' element={<ProductsPage />} />
           <Route path='/products/:id' element={<ProductsInfoPage />} />
           <Route path='*' element={<NotFoundPage />} />
