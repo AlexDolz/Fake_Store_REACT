@@ -12,7 +12,7 @@ import NotFoundPage from './components/Pages/NotFoundPage/NotFoundPage';
 const App = () => {
   return (
     <div>
-      <HashRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter hashType='hashbang'>
         <Header />
         <Routes>
           <Route path='/' element={<HomePage />} />
