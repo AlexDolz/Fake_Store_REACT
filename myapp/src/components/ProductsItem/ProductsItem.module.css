@@ -11,10 +11,16 @@
   box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45),
     25px 0 20px -20px rgba(0, 0, 0, 0.45);
   background: cornflowerblue;
+  transition: all 0.3s ease-out;
 }
 
 .product__title {
   color: white;
+}
+.products__item:hover {
+  background-color: cornflowerblue;
+  box-shadow: 0px 15px 20px cornflowerblue;
+  transform: translateY(-7px);
 }
 
 a {

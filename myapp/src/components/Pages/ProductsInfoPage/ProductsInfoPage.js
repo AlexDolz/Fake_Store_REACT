@@ -20,7 +20,7 @@ const ProductsInfoPage = () => {
       <h2>{item.title}</h2>
       <img src={item.image} alt={item.title} />
       <h2>{`Price: ${item.price} $`}</h2>
-      <p>
+      <p className={s.products__info__description}>
         <b>Description: </b>
         {item.description}
       </p>
