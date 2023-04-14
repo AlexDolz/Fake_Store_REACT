@@ -16,7 +16,7 @@
   text-decoration: none;
   font-size: 30px;
   font-weight: bold;
-  transition: all 0.3s ease-out;
+  transition: color 0.1s ease-out;
 }
 
 .menu__container a::after {
@@ -29,6 +29,9 @@
 }
 .menu__container a:hover::after {
   width: 100%;
+}
+.menu__container a:active {
+  color: rgba(255, 127, 80, 0.852);
 }
 
 @media (max-width: 435px) {
