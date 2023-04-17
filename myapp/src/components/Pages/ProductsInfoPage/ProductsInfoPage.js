@@ -25,6 +25,7 @@ const ProductsInfoPage = () => {
         {item.description}
       </p>
       {item.rating ? <Ratings rating={item.rating.rate} /> : null}
+      {/* <Rating rating={item.rating?.rate} the same */}
     </div>
   );
 };
