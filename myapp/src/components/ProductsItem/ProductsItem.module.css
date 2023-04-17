@@ -7,7 +7,7 @@
   flex-direction: column;
   padding: 20px;
   cursor: pointer;
-  height: 300px;
+  height: 420px;
   box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45),
     25px 0 20px -20px rgba(0, 0, 0, 0.45);
   background: cornflowerblue;
@@ -26,4 +26,9 @@
 a {
   text-decoration: none;
   color: black;
+}
+.products__item img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
 }

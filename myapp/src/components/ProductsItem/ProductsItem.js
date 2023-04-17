@@ -3,7 +3,7 @@ import s from './ProductsItem.module.css';
 import Ratings from '../Ratings/Ratings';
 import { Link } from 'react-router-dom';
 
-const ProductsItem = ({ title, rating, id }) => {
+const ProductsItem = ({ title, rating, id, image }) => {
   return (
     <div>
       <Link to={`/products/${id}`}>
@@ -12,6 +12,7 @@ const ProductsItem = ({ title, rating, id }) => {
           title='click to see product description'
         >
           <h2 className={s.product__title}>{title}</h2>
+          <img src={image} alt={title} />
           <Ratings rating={rating.rate} />
         </div>
       </Link>
