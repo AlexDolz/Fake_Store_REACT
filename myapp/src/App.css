@@ -6,6 +6,7 @@
 
 html {
   font-family: 'Kanit', sans-serif;
+  overflow-x: hidden;
 }
 
 input,
@@ -19,4 +20,7 @@ a:focus,
 a:visited,
 a:active {
   outline: none;
+}
+body {
+  background-color: seashell;
 }

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import s from './ProductsPage.module.css';
 import ProductsList from '../../ProductsList/ProductsList';
+import AnimatedPage from '../../AnimatedPage/AnimatedPage';
 
 const ProductsPage = () => {
   let [products, setProducts] = useState([]);
@@ -13,12 +14,14 @@ const ProductsPage = () => {
   }, []);
 
   return (
-    <div className={s.products__section__title}>
-      <h1>Products</h1>
-      <div className={s.products__section}>
-        <ProductsList products={products} />
+    <AnimatedPage>
+      <div className={s.products__section__title}>
+        <h1>Products</h1>
+        <div className={s.products__section}>
+          <ProductsList products={products} />
+        </div>
       </div>
-    </div>
+    </AnimatedPage>
   );
 };
 

@@ -1,5 +1,6 @@
 .products__section {
   background: seashell;
+  min-height: 72vh;
 }
 
 .products__section__title h1 {
